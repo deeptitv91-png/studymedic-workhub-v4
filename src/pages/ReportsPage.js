@@ -55,7 +55,7 @@ export default function ReportsPage() {
   const allDelivered = tasks.filter(t=>t.stage==="delivered");
   const rangedDelivered = rangedTasks.filter(t=>t.stage==="delivered");
   const rangedPending = rangedTasks.filter(t=>t.stage!=="delivered");
-  const overdue = rangedTasks.filter(t=>t.dueDate&&t.stage!=="delivered"&&new Date(t.dueDate.toDate?..()||t.dueDate)<new Date());
+  const overdue = rangedTasks.filter(t=>t.dueDate&&t.stage!=="delivered"&&new Date(t.dueDate.toDate ? t.dueDate.toDate() : t.dueDate)<new Date());
 
   // ── Per member stats ────────────────────────────────────────────
   const memberStats = members.map(m => {
