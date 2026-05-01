@@ -1,2 +1,11 @@
 /* src/components/layout/AdminLayout.css */
-/* Inherits all styles from Layout.css via global import */
+/* Fix sidebar text visibility for admin layout */
+.sidebar .nav-label { color: rgba(255,255,255,0.7) !important; }
+.sidebar .nav-item { color: rgba(255,255,255,0.85) !important; }
+.sidebar .nav-item:hover { background: rgba(255,255,255,0.2) !important; color: #fff !important; }
+.sidebar .nav-item--active { background: rgba(255,255,255,0.3) !important; color: #fff !important; }
+.sidebar .brand-name { color: #fff !important; }
+.sidebar .brand-sub { color: rgba(255,255,255,0.6) !important; }
+.sidebar .user-name { color: #fff !important; }
+.sidebar .user-role { color: rgba(255,255,255,0.6) !important; }
+.sidebar .sidebar-close { color: rgba(255,255,255,0.7) !important; }
