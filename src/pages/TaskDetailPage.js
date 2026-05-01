@@ -83,7 +83,12 @@ export default function TaskDetailPage() {
   async function handleApprove() {
     const next = getNextStageOnApprove(task);
     if (!next) return;
-    await patch({ stage: next }, { action: "approved", stage: next, prevStage: task.stage });
+    // Clear assignedTo when moving to next stage so previous assignee stops seeing it
+    const clearAssignee = ["content_review","design_review","video_review"].includes(task.stage);
+    await patch(
+      { stage: next, ...(clearAssignee ? { assignedTo: null, assignedBy: null } : {}) },
+      { action: "approved", stage: next, prevStage: task.stage }
+    );
   }
 
   async function handleReject() {
