@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { STAGE_LABELS, ROLE_LABELS, CATEGORY_LABELS, CREATIVE_TYPE_LABELS } from "../utils/constants";
-import { format, startOfDay, endOfDay, startOfWeek, endOfWeek, startOfMonth, endOfMonth, subDays, isWithinInterval } from "date-fns";
+import { format, startOfDay, endOfDay, startOfWeek, endOfWeek, startOfMonth, endOfMonth, isWithinInterval } from "date-fns";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from "recharts";
 import "./ReportsPage.css";
 
@@ -67,7 +67,7 @@ export default function ReportsPage() {
   // Creative type distribution
   const typeCounts = {};
   rangedTasks.forEach((t) => { typeCounts[t.creativeType] = (typeCounts[t.creativeType] || 0) + 1; });
-  const typeData = Object.entries(typeCounts).map(([type, count]) => ({ name: CREATIVE_TYPE_LABELS[type] || type, value: count }));
+
 
   // Member bar chart
   const memberBarData = memberStats.slice(0, 10).map((m) => ({ name: m.name?.split(" ")[0], assigned: m.assigned, delivered: m.delivered }));

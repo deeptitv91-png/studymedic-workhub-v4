@@ -1,7 +1,7 @@
 // src/pages/TaskDetailPage.js
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { doc, onSnapshot, updateDoc, serverTimestamp, arrayUnion, collection, getDocs } from "firebase/firestore";
+import { doc, onSnapshot, updateDoc, serverTimestamp, arrayUnion, collection } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { db, storage } from "../firebase/config";
 import { useAuth } from "../context/AuthContext";

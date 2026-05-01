@@ -1,5 +1,5 @@
 // src/utils/workflow.js
-import { LEVEL_1, CREATIVE_TYPES, STAGES, APPROVERS } from "./constants";
+import { LEVEL_1, CREATIVE_TYPES, STAGES } from "./constants";
 
 // What tasks should be visible to a given user
 export function getVisibleTasks(tasks, user) {
@@ -55,7 +55,7 @@ export function getVisibleTasks(tasks, user) {
 // What actions can the current user perform on this task
 export function getActions(task, user) {
   if (!task || !user) return {};
-  const { stage, assignedTo, assignedBy, createdBy } = task;
+  const { stage, assignedTo, assignedBy } = task;
   const role = user.role;
   const uid = user.id;
 
