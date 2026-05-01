@@ -1,0 +1,26 @@
+/* src/pages/DashboardPage.css */
+.dash-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 28px; }
+.stat-card { padding: 18px 20px; }
+.stat-value { font-size: 28px; font-weight: 800; color: var(--gray-900); line-height: 1; }
+.stat-label { font-size: 12px; color: var(--gray-500); margin-top: 5px; font-weight: 500; }
+
+.task-groups { display: flex; flex-direction: column; gap: 28px; }
+.task-group-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.task-group-title { font-size: 15px; font-weight: 600; color: var(--gray-900); }
+.task-group-count { background: var(--gray-200); color: var(--gray-600); font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 10px; }
+.task-group-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+
+.task-card { padding: 14px 16px; cursor: pointer; transition: box-shadow 0.15s, transform 0.1s; }
+.task-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.task-card--overdue { border-left: 3px solid var(--red-700); }
+.task-card-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.task-card-title { font-size: 14px; font-weight: 600; color: var(--gray-900); margin-bottom: 8px; line-height: 1.4; }
+.task-card-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+.task-cat { display: inline-flex; padding: 2px 8px; border-radius: 5px; font-size: 11px; font-weight: 500; }
+.task-type { font-size: 11px; color: var(--gray-500); }
+.task-card-footer { display: flex; align-items: center; justify-content: space-between; }
+
+@media (max-width: 768px) {
+  .dash-stats { grid-template-columns: repeat(2, 1fr); }
+  .task-group-cards { grid-template-columns: 1fr; }
+}

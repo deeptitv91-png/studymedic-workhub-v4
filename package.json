@@ -1,0 +1,33 @@
+{
+  "name": "studymedic-workhub",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.22.0",
+    "firebase": "^10.8.0",
+    "date-fns": "^3.3.1",
+    "recharts": "^2.12.0",
+    "uuid": "^9.0.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"],
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-redeclare": "warn"
+    }
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version"]
+  }
+}

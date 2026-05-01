@@ -1,0 +1,19 @@
+/* src/pages/ReportsPage.css */
+.report-period { display: flex; align-items: center; gap: 6px; padding: 12px 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.period-btn { padding: 7px 16px; border-radius: 7px; font-size: 13px; font-weight: 500; background: none; color: var(--gray-500); border: 1px solid var(--gray-200); cursor: pointer; transition: all 0.15s; }
+.period-btn:hover { background: var(--gray-100); color: var(--gray-800); }
+.period-btn--active { background: var(--brand2); color: #fff; border-color: var(--brand2); }
+.report-kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 20px; }
+.kpi-card { padding: 16px 18px; }
+.kpi-value { font-size: 28px; font-weight: 800; color: var(--gray-900); line-height: 1; }
+.kpi-label { font-size: 12px; color: var(--gray-500); margin-top: 5px; font-weight: 500; }
+.report-charts { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 14px; margin-bottom: 16px; }
+.chart-card { padding: 18px 20px; }
+.chart-wide { grid-column: span 1; }
+.chart-title { font-size: 14px; font-weight: 600; color: var(--gray-900); margin-bottom: 14px; }
+.admin-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.admin-table th { text-align: left; padding: 9px 16px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--gray-400); background: var(--gray-50); }
+.admin-table td { padding: 11px 16px; border-top: 1px solid var(--gray-100); color: var(--gray-700); vertical-align: middle; }
+.admin-table tr:hover td { background: var(--gray-50); }
+@media (max-width: 1024px) { .report-kpis { grid-template-columns: repeat(3, 1fr); } .report-charts { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 768px) { .report-kpis { grid-template-columns: repeat(2, 1fr); } .report-charts { grid-template-columns: 1fr; } }

@@ -1,0 +1,16 @@
+/* src/pages/SuperAdminPage.css */
+.sa-tabs { display: flex; gap: 4px; margin-bottom: 24px; border-bottom: 1px solid var(--gray-200); }
+.sa-tab { display: flex; align-items: center; gap: 7px; padding: 10px 18px; font-size: 13px; font-weight: 500; color: var(--gray-500); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; margin-bottom: -1px; transition: all 0.15s; }
+.sa-tab:hover { color: var(--gray-800); }
+.sa-tab--active { color: var(--brand2); border-bottom-color: var(--brand2); }
+.sa-badge { background: var(--gray-100); color: var(--gray-500); font-size: 11px; padding: 1px 7px; border-radius: 10px; }
+.sa-tab--active .sa-badge { background: var(--brand-light); color: var(--brand2); }
+.sa-kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.sa-kpi { padding: 18px 20px; }
+.sa-kpi-val { font-size: 28px; font-weight: 800; color: var(--gray-900); }
+.sa-kpi-lbl { font-size: 12px; color: var(--gray-500); margin-top: 5px; }
+.sa-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sa-table th { text-align: left; padding: 9px 16px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--gray-400); background: var(--gray-50); white-space: nowrap; }
+.sa-table td { padding: 11px 16px; border-top: 1px solid var(--gray-100); color: var(--gray-700); vertical-align: middle; }
+.sa-table tr:hover td { background: var(--gray-50); }
+@media (max-width: 768px) { .sa-kpis { grid-template-columns: repeat(2, 1fr); } }

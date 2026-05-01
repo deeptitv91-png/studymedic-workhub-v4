@@ -1,0 +1,17 @@
+/* src/pages/MyTasksPage.css */
+.mt-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+.mt-stat { padding: 16px 18px; }
+.mt-stat-val { font-size: 26px; font-weight: 800; color: var(--gray-900); line-height: 1; }
+.mt-stat-lbl { font-size: 12px; color: var(--gray-500); margin-top: 5px; }
+.mt-tabs { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--gray-200); overflow-x: auto; }
+.mt-tab { display: flex; align-items: center; gap: 7px; padding: 10px 14px; font-size: 13px; font-weight: 500; color: var(--gray-500); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; margin-bottom: -1px; white-space: nowrap; }
+.mt-tab:hover { color: var(--gray-800); }
+.mt-tab--active { color: var(--brand2); border-bottom-color: var(--brand2); }
+.mt-tab-count { background: var(--gray-100); color: var(--gray-500); font-size: 11px; padding: 1px 7px; border-radius: 10px; }
+.mt-tab--active .mt-tab-count { background: var(--brand-light); color: var(--brand2); }
+.mt-list { display: flex; flex-direction: column; gap: 8px; }
+.mt-task { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; cursor: pointer; transition: box-shadow 0.15s, transform 0.1s; }
+.mt-task:hover { box-shadow: var(--shadow-md); transform: translateX(2px); }
+.mt-task--overdue { border-left: 3px solid var(--red-700); border-radius: 0 var(--r) var(--r) 0; }
+.mt-task-left { flex: 1; min-width: 0; }
+@media (max-width: 768px) { .mt-stats { grid-template-columns: repeat(2, 1fr); } .mt-task { flex-direction: column; align-items: flex-start; gap: 10px; } }
