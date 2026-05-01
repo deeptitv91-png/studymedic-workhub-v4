@@ -22,26 +22,26 @@ export function getVisibleTasks(tasks, user) {
       if (t.assignedBy === uid) return true;
     }
 
-    // Content lead sees content stage tasks only
+    // Content lead sees ALL content stage tasks
     if (role === "content_lead") {
-      if (["content_allocated","content_in_progress","content_review","content_rework"].includes(t.stage) && (t.assignedBy === uid || t.assignedTo === uid)) return true;
+      if (["content_allocated","content_in_progress","content_review","content_rework"].includes(t.stage)) return true;
     }
     // Content writer sees only tasks assigned to them at content stage
     if (role === "content_writer") {
       if (["content_allocated","content_in_progress","content_rework"].includes(t.stage) && t.assignedTo === uid) return true;
     }
 
-    // Design lead sees design stage tasks only
+    // Design lead sees ALL design stage tasks
     if (role === "design_lead") {
-      if (["design_allocated","design_in_progress","design_review","design_rework"].includes(t.stage) && (t.assignedBy === uid || t.assignedTo === uid)) return true;
+      if (["design_allocated","design_in_progress","design_review","design_rework"].includes(t.stage)) return true;
     }
     // Designer sees only tasks assigned to them at design stage
     if (role === "designer") {
       if (["design_allocated","design_in_progress","design_rework"].includes(t.stage) && t.assignedTo === uid) return true;
     }
-    // Video lead sees video stage tasks only
+    // Video lead sees ALL video stage tasks
     if (role === "video_lead") {
-      if (["video_allocated","video_in_progress","video_review","video_rework"].includes(t.stage) && (t.assignedBy === uid || t.assignedTo === uid)) return true;
+      if (["video_allocated","video_in_progress","video_review","video_rework"].includes(t.stage)) return true;
     }
     // Video editor sees only tasks assigned to them at video stage
     if (role === "video_editor") {
