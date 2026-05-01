@@ -7,3 +7,14 @@
 .admin-table th { text-align: left; padding: 9px 16px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--gray-400); background: var(--gray-50); white-space: nowrap; }
 .admin-table td { padding: 11px 16px; border-top: 1px solid var(--gray-100); color: var(--gray-700); vertical-align: middle; }
 .admin-table tr:hover td { background: var(--gray-50); }
+
+/* Fix font colors for admin page */
+.admin-page { color: #321f2e; }
+.admin-table th { color: #6b4f63; }
+.admin-table td { color: #321f2e; }
+.admin-section-title { color: #321f2e; }
+.admin-page .page-title { color: #321f2e; }
+.admin-page .page-subtitle { color: #6b4f63; }
+.admin-page code { color: #4a2f40; background: #f5eef2; }
+.admin-page .input { color: #321f2e; }
+.admin-page .badge { color: #4a2f40; }
