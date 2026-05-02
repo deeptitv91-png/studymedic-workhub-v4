@@ -36,6 +36,9 @@ export default function AdminLayout({ children, isSuperAdmin }) {
               <NavLink to="/admin/reports" className={({ isActive }) => `nav-item${isActive ? " nav-item--active" : ""}`}>
                 <span className="nav-icon">◫</span> Reports
               </NavLink>
+              <NavLink to="/admin/admission" className={({ isActive }) => `nav-item${isActive ? " nav-item--active" : ""}`}>
+                <span className="nav-icon">🎯</span> Admission Analysis
+              </NavLink>
             </>
           )}
         </nav>

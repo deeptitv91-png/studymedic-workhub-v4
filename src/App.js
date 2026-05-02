@@ -12,6 +12,7 @@ import MyTasksPage from "./pages/MyTasksPage";
 import AdminPage from "./pages/AdminPage";
 import ReportsPage from "./pages/ReportsPage";
 import SuperAdminPage from "./pages/SuperAdminPage";
+import AdmissionAnalysisPage from "./pages/AdmissionAnalysisPage";
 import "./styles/global.css";
 
 function AppRoutes() {
