@@ -39,6 +39,7 @@ function AppRoutes() {
         <Routes>
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/admin/reports" element={<ReportsPage />} />
+          <Route path="/admin/admission" element={<AdmissionAnalysisPage />} />
           <Route path="*" element={<Navigate to="/admin" />} />
         </Routes>
       </AdminLayout>
