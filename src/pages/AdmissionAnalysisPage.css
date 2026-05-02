@@ -1,0 +1,13 @@
+/* src/pages/AdmissionAnalysisPage.css */
+.admission-page { max-width: 1400px; }
+
+.comm-types { padding: 16px 20px; margin-bottom: 16px; }
+.comm-type-card { background: var(--gray-50); border: 1px solid #f0d6e4; border-radius: 8px; padding: 12px; text-align: center; }
+.comm-type-icon { font-size: 24px; margin-bottom: 6px; }
+.comm-type-label { font-size: 13px; font-weight: 600; color: var(--gray-800); margin-bottom: 4px; }
+.comm-type-desc { font-size: 11px; color: var(--gray-500); line-height: 1.5; }
+
+.admission-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.admission-table th { text-align: left; padding: 9px 16px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--gray-500); background: #fdf6f8; white-space: nowrap; }
+.admission-table td { padding: 11px 16px; border-top: 1px solid #f0d6e4; color: var(--gray-700); vertical-align: middle; }
+.admission-table tr:hover td { background: #fdf6f8; }
