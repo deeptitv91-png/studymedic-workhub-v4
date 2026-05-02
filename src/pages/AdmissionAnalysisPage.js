@@ -13,7 +13,7 @@ import { format } from "date-fns";
 import "./AdmissionAnalysisPage.css";
 
 const SHEET_ID = "1EIhvxqQ-PdL6k2-3CJSSBQu1raQ10fc7ATKMnXhg2dc";
-const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`;
+const SHEET_CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
 
 const COMMUNICATION_TYPES = [
   { key: "mentor_based",   label: "Mentor-based",          icon: "🎓", desc: "Highlight mentor expertise and success stories" },
